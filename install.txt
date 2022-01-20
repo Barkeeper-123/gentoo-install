@@ -1,0 +1,144 @@
+#WARNING!!! This is NOT an executable script but a guide
+
+
+#Disk partitioning
+
+Layout:
+    256MiB FAT32 Boot partition  /dev/sda1
+    4GiB Swap partition          /dev/sda2
+    460+GiB BTRFS Root Partition /dev/sda3
+
+#configure filesystems
+mkfs.vfat -F 32 /dev/sda1
+
+mkswap /dev/sda2
+swapon /dev/sda2
+
+#WARNING! Make sure to enable support for your filesystem in the kernel config
+#File systems --->
+#    <*> Btrfs filesystem
+mkfs.btrfs /dev/sda3
+
+#mounting root partition
+mkdir /mnt/gentoo
+mount /dev/sda3 /mnt/gentoo
+
+#download stage3 tarball
+wget https://bouncer.gentoo.org/fetch/root/all/releases/amd64/autobuilds/20220116T170534Z/stage3-amd64-openrc-20220116T170534Z.tar.xz -P /mnt/gentoo
+
+#unpacking stage3 tarball
+tar xpvf /mnt/gentoo/stage3-*.tar.xz --xattrs-include='*.*' --numeric-owner
+rm -f /mnt/gentoo/stage3-*.tar.xz
+
+#replacing default with custom make.conf (modify to your liking or use your own)
+#to use different mirrors remove existing mirrors in make.conf and uncomment mirrorselect -i -o >> /mnt/gentoo/etc/portage/make.conf
+cp -r ../install /mnt/gentoo/root
+cp make.conf /mnt/gentoo/etc/portage/make.conf
+#mirrorselect -i -o >> /mnt/gentoo/etc/portage/make.conf
+cd /mnt/gentoo/root/install
+
+mkdir --parents /mnt/gentoo/etc/portage/repos.conf
+
+cp /mnt/gentoo/usr/share/portage/config/repos.conf /mnt/gentoo/etc/portage/repos.conf/gentoo.conf
+
+cp --dereference /etc/resolv.conf /mnt/gentoo/etc
+
+#mounting necessary filesystems
+mount --types proc /proc /mnt/gentoo/proc
+mount --rbind /sys /mnt/gentoo/sys
+mount --make-rslave /mnt/gentoo/sys
+mount --rbind /dev /mnt/gentoo/dev
+mount --make-rslave /mnt/gentoo/dev
+mount --bind /run /mnt/gentoo/run
+mount --make-slave /mnt/gentoo/run
+
+#chrooting into new environment
+chroot /mnt/gentoo /bin/bash
+source /etc/profile && export PS1="(chroot) ${PS1}"
+cd ~/install
+
+#mounting boot partition at /boot
+mount /dev/sda1 /boot
+#emerge dosfstools if it doesnt mount
+
+#syncing packages and updating the world
+#this will take a VERY long time
+emerge-webrsync
+eselect profile list
+eselect profile set YOUR_PROFILE
+emerge --verbose --update --deep --newuse @world
+#emerge -vUDN @world
+
+#configuring timezones
+echo "Europe/Berlin" > /etc/timezone
+emerge --config sys-libs/timezone-data
+
+#replace default locale.gen with custom locale.gen
+cp locale.gen /etc/locale.gen
+locale-gen
+eselect locale list
+eselect locale set YOUR_LOCALE
+
+#configuring some envvars
+env-update && source /etc/profile && export PS1="(chroot) ${PS1}"
+
+#downloading kernel sources
+emerge sys-kernel/gentoo-sources
+
+#creates symlink /usr/src/linux
+eselect kernel list
+eselect kernel set
+
+#emerging some apps neccessary for building the kernel
+emerge lzop app-arch/lz4 sys-apps/pciutils
+
+#replacing default kernel config
+cp .config /usr/src/linux
+cd /usr/src/linux
+
+#configure kernel (comment out if already customised)
+make menuconfig
+
+#compiling kernel
+make && make modules_install && make install
+
+#building initramfs
+emerge sys-kernel/genkernel
+genkernel --install --kernel-config=/usr/src/linux/.config
+
+cd ~/install
+
+#replacing default fstab and hostname files
+cp fstab /etc/fstab
+cp hostname /etc/conf.d
+
+#configuring network adapters, replace enp27s0 with your adapter (e.g. eth0)
+#get your adapter name by running ifconfig
+emerge --noreplace net-misc/netifrc
+cp net /etc/conf.d
+ln -s /etc/init.d/net.lo /etc/init.d/net.enp27s0
+rc-update add net.enp27s0 default
+cp hosts /etc
+
+passwd
+
+#installing some more programs
+emerge app-admin/sysklogd net-misc/dhcpcd app-admin/doas sys-fs/btrfs-progs sys-boot/os-prober
+rc-update add sysklogd default
+rc-update add dhcpcd default
+cp doas.conf /etc
+
+#installing grub
+
+emerge sys-boot/grub
+grub-install --target=x86_64-efi --efi-directory=/boot
+grub-mkconfig -o /boot/grub/grub.cfg
+
+exit
+cd
+umount -l /mnt/gentoo/dev{/shm,/pts,}
+umount -R /mnt/gentoo
+reboot
+
+#useradd -m -G users,wheel,audio -s /bin/bash barkeeper
+#passwd barkeeper

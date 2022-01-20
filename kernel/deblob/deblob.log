@@ -1,0 +1,912 @@
+
+MICROCODE_AMD - AMD microcode patch loading support
+
+MICROCODE_INTEL - Intel microcode patch loading support
+
+MICROCODE - CPU microcode loading support
+
+X86_LOCAL_APIC - Undocumented
+
+CPU_SUP_INTEL - Support Intel processors
+
+SENSORS_CORETEMP - Intel Core/Core2/Atom temperature sensor
+
+IXP4XX_NPE - IXP4xx Network Processor Engine support
+
+MACH_SUN8I - Allwinner sun8i Family SoCs support
+
+UCODE_PATCH - ppc microcode
+
+USB_SOF_UCODE_PATCH - USB SOF patch
+
+I2C_SPI_UCODE_PATCH - I2C/SPI relocation patch
+
+I2C_SPI_SMC1_UCODE_PATCH - I2C/SPI/SMC1 relocation patch
+
+SMC_UCODE_PATCH - SMC relocation patch
+
+ATM_AMBASSADOR - Madge Ambassador, Collage PCI 155 Server
+
+ATM_FORE200E - FORE Systems 200E-series
+
+ATM_SOLOS - Solos ADSL2+ PCI Multiport card driver
+
+CAVIUM_CPT - Cavium Cryptographic Accelerator driver
+
+CRYPTO_DEV_NITROX_CNN55XX - Support for Cavium CNN55XX driver
+
+CRYPTO_DEV_SP_PSP - Platform Security Processor (PSP) device
+
+CRYPTO_DEV_SAFEXCEL - Inside Secure's SafeXcel cryptographic engine driver
+
+CRYPTO_DEV_OCTEONTX_CPT - Support for Marvell OcteonTX CPT driver
+
+CRYPTO_DEV_OCTEONTX2_CPT - Marvell OcteonTX2 CPT driver
+
+CRYPTO_DEV_QAT_DH895xCC - Support for Intel(R) DH895xCC
+
+CRYPTO_DEV_QAT - Common bits for Intel(R) QuickAssist Technology
+
+CRYPTO_DEV_QAT_C3XXX - Support for Intel(R) C3XXX
+
+CRYPTO_DEV_QAT_C62X - Support for Intel(R) C62X
+
+CRYPTO_DEV_QAT_4XXX - Support for Intel(R) QAT_4XXX
+
+AMDTEE - AMD's Trusted Execution Environment (TEE)
+
+MOXA_INTELLIO - Moxa Intellio support
+
+DRM - Direct Rendering Manager (XFree86 4.1.0 and higher DRI support)
+
+DRM_AMDGPU - AMD GPU
+
+DRM_AMDGPU_CIK - Enable amdgpu support for CIK parts
+
+DRM_AMDGPU_SI - Enable amdgpu support for SI parts
+
+DRM_AST - AST server chips
+
+DRM_CDNS_MHDP8546 - Cadence DPI/DP bridge
+
+DRM_I915 - Intel 8xx/9xx/G3x/G4x/HD Graphics
+
+DRM_I915_GVT - Enable Intel GVT-g graphics virtualization host support
+
+DRM_LONTIUM_LT9611UXC - Lontium LT9611UXC DSI/HDMI bridge
+
+DRM_NOUVEAU - Nouveau (nVidia) cards
+
+DRM_MGA - Matrox g200/g400
+
+DRM_MSM - MSM DRM
+
+DRM_R128 - ATI Rage 128
+
+DRM_RADEON - ATI Radeon
+
+ROCKCHIP_CDN_DP - Rockchip cdn DP
+
+DRM_STI - DRM Support for STMicroelectronics SoC stiH41x Series
+
+DRM_TEGRA - NVIDIA Tegra DRM
+
+IMX_SDMA - i.MX SDMA support
+
+ST_FDMA - ST FDMA dmaengine support
+
+MEDIA_TUNER_SI2157 - Silicon Labs Si2157 silicon tuner
+
+MEDIA_TUNER_XC2028 - XCeive xc2028/xc3028 tuners
+
+VIDEO_TM6000_DVB - DVB Support for tm6000 based TV cards
+
+MEDIA_TUNER_XC4000 - Xceive XC4000 silicon tuner
+
+MEDIA_TUNER_XC5000 - Xceive XC5000 silicon tuner
+
+DVB_USB - Support for various USB DVB devices
+
+DVB_USB_V2 - Support for various USB DVB devices v2
+
+DVB_B2C2_FLEXCOP - Technisat/B2C2 FlexCopII(b) and FlexCopIII adapters
+
+DVB_BT8XX - BT8xx based PCI cards
+
+DVB_USB_A800 - AVerMedia AverTV DVB-T USB 2.0 (A800)
+
+DVB_USB_AF9005 - Afatech AF9005 DVB-T USB1.1 support
+
+DVB_USB_AF9015 - Afatech AF9015 DVB-T USB2.0 support
+
+DVB_USB_AF9035 - Afatech AF9035 DVB-T USB2.0 support
+
+DVB_USB_AZ6007 - Azurewave 6007 and clones DVB-T/C USB2.0 support
+
+DVB_USB_AZ6027 - Azurewave DVB-S/S2 USB2.0 AZ6027 support
+
+DVB_USB_CXUSB - Conexant USB2.0 hybrid reference design support
+
+DVB_USB_DIB0700 - DiBcom DiB0700 USB DVB devices
+
+DVB_USB_DIBUSB_MB - DiBcom USB DVB-T devices (based on the DiB3000M-B)
+
+DVB_USB_DIBUSB_MC - DiBcom USB DVB-T devices (based on the DiB3000M-C/P)
+
+DVB_USB_DIGITV - Nebula Electronics uDigiTV DVB-T USB2.0 support
+
+DVB_USB_DTT200U - WideView WT-200U and WT-220U (pen) DVB-T USB2.0 support (Yakumo/Hama/Typhoon/Yuan)
+
+DVB_USB_DW2102 - DvbWorld DVB-S/S2 USB2.0 support
+
+DVB_USB_EC168 - E3C EC168 DVB-T USB2.0 support
+
+DVB_USB_GP8PSK - GENPIX 8PSK->USB module support
+
+DVB_USB_LME2510 - LME DM04/QQBOX DVB-S USB2.0 support
+
+DVB_USB_M920X - Uli m920x DVB-T USB2.0 support
+
+DVB_USB_NOVA_T_USB2 - Hauppauge WinTV-NOVA-T usb2 DVB-T USB2.0 support
+
+DVB_USB_OPERA1 - Opera1 DVB-S USB2.0 receiver
+
+DVB_USB_TECHNISAT_USB2 - Technisat DVB-S/S2 USB2.0 support
+
+DVB_USB_TTUSB2 - Pinnacle 400e DVB-S USB2.0 support
+
+DVB_USB_UMT_010 - HanfTek UMT-010 DVB-T USB2.0 support
+
+DVB_USB_VP702X - TwinhanDTV StarBox and clones DVB-S USB2.0 support
+
+DVB_USB_VP7045 - TwinhanDTV Alpha/MagicBoxII, DNTV tinyUSB2, Beetle USB2.0 support
+
+DVB_AF9013 - Afatech AF9013 demodulator
+
+DVB_BCM3510 - Broadcom BCM3510
+
+DVB_CX24116 - Conexant CX24116 based
+
+DVB_CX24117 - Conexant CX24117 based
+
+DVB_CX24120 - Conexant CX24120 based
+
+DVB_DS3000 - Montage Tehnology DS3000 based
+
+DVB_DRX39XYJ - Micronas DRX-J demodulator
+
+DVB_LGS8GXX - Legend Silicon LGS8913/LGS8GL5/LGS8GXX DMB-TH demodulator
+
+DVB_M88DS3103 - Montage M88DS3103
+
+DVB_MXL692 - MaxLinear MXL692 based
+
+DVB_NXT200X - NxtWave Communications NXT2002/NXT2004 based
+
+DVB_OR51132 - Oren OR51132 based
+
+DVB_OR51211 - Oren OR51211 based
+
+DVB_SI2165 - Silicon Labs si2165 based
+
+DVB_SI2168 - Silicon Labs Si2168
+
+DVB_SP8870 - Spase sp8870
+
+DVB_SP887X - Spase sp887x based
+
+DVB_TDA10048 - Philips TDA10048HN based
+
+DVB_TDA1004X - Philips TDA10045H/TDA10046H
+
+DVB_TDA10071 - NXP TDA10071
+
+DVB_AS102 - Abilis AS102 DVB receiver
+
+DVB_AV7110 - AV7110 cards
+
+DVB_BUDGET - Budget cards
+
+DVB_BUDGET_AV - Budget cards with analog video inputs
+
+DVB_BUDGET_CI - Budget cards with onboard CI connector
+
+DVB_C8SECTPFE - STMicroelectronics C8SECTPFE DVB support
+
+DVB_DRXD - Micronas DRXD driver
+
+DVB_DRXK - Micronas DRXK based
+
+DVB_MN88472 - Panasonic MN88472
+
+DVB_MN88473 - Panasonic MN88473
+
+DVB_NGENE - Micronas nGene support
+
+DVB_PLUTO2 - Pluto2 cards
+
+SMS_SIANO_MDTV - Siano SMS1xxx based MDTV receiver
+
+SMS_USB_DRV - Siano's USB interface support
+
+DVB_TTUSB_BUDGET - Technotrend/Hauppauge Nova-USB devices
+
+DVB_TTUSB_DEC - Technotrend/Hauppauge USB DEC devices
+
+VIDEO_ALLEGRO_DVT - Allegro DVT Video IP Core
+
+VIDEO_ATOMISP - Intel Atom Image Signal Processor Driver
+
+VIDEO_BT848 - BT848 Video For Linux
+
+VIDEO_CCS - MIPI CCS/SMIA++/SMIA sensor support
+
+VIDEO_CODA - Chips&Media Coda multi-standard codec IP
+
+VIDEO_CPIA2 - CPiA2 Video For Linux
+
+VIDEO_CX18 - Conexant cx23418 MPEG encoder support
+
+VIDEO_CX231XX - Conexant cx231xx USB video capture support
+
+VIDEO_CX23885 - Conexant cx23885 (2388x successor) support
+
+VIDEO_CX25840 - Conexant CX2584x audio/video decoders
+
+VIDEO_CX88_BLACKBIRD - Blackbird MPEG encoder support (cx2388x + cx23416)
+
+VIDEO_EM28XX_DVB - DVB/ATSC Support for em28xx based TV cards
+
+VIDEO_EXYNOS4_FIMC_IS - EXYNOS4x12 FIMC-IS (Imaging Subsystem) driver
+
+VIDEO_IPU3_IMGU - Intel ipu3-imgu driver
+
+VIDEO_IVTV - Conexant cx23416/cx23415 MPEG encoder/decoder support
+
+VIDEO_MEDIATEK_VPU - Mediatek Video Processor Unit
+
+VIDEO_MESON_VDEC - Amlogic video decoder driver
+
+VIDEO_PVRUSB2 - Hauppauge WinTV-PVR USB2 support
+
+VIDEO_CX23885, VIDEO_CX88_BLACKBIRD, VIDEO_IVTV, VIDEO_PVRUSB2 - See above
+
+VIDEO_GO7007 - Go 7007 support
+
+VIDEO_GO7007_USB_S2250_BOARD - Sensoray 2250/2251 support
+
+VIDEO_SAA7134_DVB - DVB/ATSC Support for saa7134 based TV cards
+
+VIDEO_SAA7134_GO7007 - go7007 support for saa7134 based TV cards
+
+VIDEO_SAA7164 - NXP SAA7164 support
+
+VIDEO_S5C73M3 - Samsung S5C73M3 sensor support
+
+VIDEO_S5K4ECGX - Samsung S5K4ECGX sensor support
+
+VIDEO_S5K5BAF - Samsung S5K5BAF sensor support
+
+VIDEO_VS6624 - ST VS6624 sensor support
+
+VIDEO_SAMSUNG_S5P_MFC - Samsung S5P MFC 5.1 Video Codec
+
+USB_S2255 - USB Sensoray 2255 video capture device
+
+USB_GSPCA_VICAM - USB 3com HomeConnect, AKA vicam
+
+VIDEO_QCOM_VENUS - Qualcomm Venus V4L2 encoder/decoder driver
+
+VIDEO_TI_VPE - TI VPE (Video Processing Engine) driver
+
+RADIO_WL1273 - Texas Instruments WL1273 I2C FM Radio
+
+RADIO_WL128X - Texas Instruments WL128x FM Radio
+
+ACENIC - Alteon AceNIC/3Com 3C985/NetGear GA620 Gigabit
+
+ADAPTEC_STARFIRE - Adaptec Starfire/DuraLAN support
+
+BNA - Brocade 1010/1020 10Gb Ethernet Driver support
+
+BNX2 - Broadcom NetXtremeII
+
+BNX2X - Broadcom NetXtremeII 10Gb support
+
+CASSINI - Sun Cassini
+
+CHELSIO_T3 - Chelsio AEL 2005 support
+
+CHELSIO_T4 - Chelsio Communications T4 Ethernet support
+
+E100 - Intel PRO/100+
+
+ICE - Intel(R) Ethernet Connection E800 Series Support
+
+LIQUIDIO - Cavium LiquidIO support
+
+MLXSW_SPECTRUM - Mellanox Technologies Spectrum support
+
+MYRI10GE - Myricom Myri-10G Ethernet support
+
+NFP - Netronome(R) NFP4000/NFP6000 NIC driver
+
+NETXEN_NIC - NetXen Multi port (1/10) Gigabit Ethernet NIC
+
+QED - QLogic QED 25/40/100Gb core driver
+
+QLCNIC - QLOGIC QLCNIC 1/10Gb Converged Ethernet NIC Support
+
+R8169 - Realtek 8169 gigabit ethernet support
+
+SLICOSS - Alacritech Gigabit IS-NIC cards
+
+SPIDER_NET - Spider Gigabit Ethernet driver
+
+TEHUTI - Tehuti Networks 10G Ethernet
+
+TIGON3 - Broadcom Tigon3
+
+TYPHOON - 3cr990 series Typhoon
+
+VXGE - Exar X3100 Series 10GbE PCIe Server Adapter
+
+COPS - COPS LocalTalk PC
+
+YAM - YAM driver for AX.25
+
+PCMCIA_SMC91C92 - SMC 91Cxx PCMCIA
+
+NFC_FDP - Intel FDP NFC driver
+
+NFC_MRVL - Marvell NFC core driver
+
+NFC_NXP_NCI - NXP-NCI NFC driver
+
+NFC_PN544_I2C - NFC PN544 i2c support
+
+NFC_S3FWRN5 - Core driver for Samsung S3FWRN5 NFC chip
+
+USB_KAWETH - USB KLSI KL5USB101-based ethernet device support
+
+USB_RTL8152 - Realtek RTL8152/RTL8153 Based USB Ethernet Adapters
+
+ATMEL Atmel at76c50x chipset  802.11b support
+
+AT76C50X_USB - Atmel at76c503/at76c505/at76c505a USB cards
+
+B43 - Broadcom 43xx wireless support (mac80211 stack)
+
+B43LEGACY - Broadcom 43xx-legacy wireless support (mac80211 stack)
+
+BRCMSMAC - Broadcom IEEE802.11n PCIe SoftMAC WLAN driver
+
+BRCMFMAC - Broadcom IEEE802.11n embedded FullMAC WLAN driver
+
+BRCMFMAC_SDIO - Broadcom IEEE802.11n SDIO FullMAC WLAN driver
+
+BRCMFMAC_USB - Broadcom IEEE802.11n USB FullMAC WLAN driver
+
+BRCMFMAC_PCIE - Broadcom IEEE802.11n PCIE FullMAC WLAN driver
+
+HERMES - Hermes chipset 802.11b support (Orinoco/Prism2/Symbol)
+
+ORINOCO_USB - Agere Orinoco USB support
+
+IPW2100 - Intel PRO/Wireless 2100 Network Connection
+
+IPW2200 - Intel PRO/Wireless 2200BG and 2915ABG Network Connection
+
+IWL3945 - Intel PRO/Wireless 3945ABG/BG Network Connection
+
+IWL4965 - Intel Wireless WiFi 4965AGN
+
+IWLWIFI - Intel Wireless WiFi Next Gen AGN
+
+IWLDVM - Intel Wireless WiFi DVM Firmware support
+
+IWLMVM - Intel Wireless WiFi MVM Firmware support
+
+KS7010 - KeyStream KS7010 SDIO support
+
+LIBERTAS - Marvell 8xxx Libertas WLAN driver support
+
+LIBERTAS_CS - Marvell Libertas 8385 CompactFlash 802.11b/g cards
+
+LIBERTAS_SDIO - Marvell Libertas 8385 and 8686 SDIO 802.11b/g cards
+
+LIBERTAS_SPI - Marvell Libertas 8686 SPI 802.11b/g cards
+
+LIBERTAS_USB - Marvell Libertas 8388 USB 802.11b/g cards
+
+LIBERTAS_THINFIRM_USB - Marvell Libertas 8388 USB 802.11b/g cards with thin firmware
+
+MT7601U - MediaTek MT7601U (USB) support
+
+MT76x0_COMMON - MediaTek MT76x0E/U support
+
+MT76x0E - MediaTek MT76x0E (PCIe) support
+
+MT76x0U - MediaTek MT76x0U (USB) support
+
+MT76x2E - MediaTek MT76x2E (PCIe) support
+
+MT76x2U - MediaTek MT76x2U (USB) support
+
+MT7603E - MediaTek MT7603E (PCIe) and MT76x8 WLAN support
+
+MT7615E - MediaTek MT7615E (PCIe) support
+
+MT7622_WMAC - MT7622 (SoC) WMAC support
+
+MT7663U - MediaTek MT7663U (USB) support
+
+MT7915E - MediaTek MT7915E (PCIe) support
+
+MT7921E - MediaTek MT7921E (PCIe) support
+
+MWIFIEX - Marvell WiFi-Ex Driver
+
+MWIFIEX_SDIO - Marvell WiFi-Ex Driver for SD8787
+
+MWIFIEX_PCIE - Marvell WiFi-Ex Driver for PCI 8766
+
+MWIFIEX_USB - Marvell WiFi-Ex Driver for USB8797
+
+MWL8K - Marvell 88W8xxx PCI/PCIe Wireless support
+
+PRESTERA_PCI - PCI interface driver for Marvell Prestera Switch ASICs family
+
+AR5523 - Atheros AR5523 wireless driver support
+
+ATH6KL - Atheros ath6kl support
+
+ATH6KL_SDIO - Atheros ath6kl SDIO support
+
+ATH6KL_USB - Atheros ath6kl USB support
+
+ATH10K - Atheros 802.11ac wireless cards support
+
+ATH10K NL80211_TESTMODE - nl80211 testmode command
+
+ATH10K_PCI - Atheros ath10k PCI support
+
+ATH11K - Qualcomm Technologies 802.11ax chipset support
+
+ATH11K_PCI - Atheros ath11k PCI support
+
+WIL6210 - Wilocity 60g WiFi card wil6210 support
+
+CW1200 - CW1200 WLAN support
+
+CW1200_WLAN_SDIO - Support SDIO platforms
+
+PRISM2_USB - Prism2.5/3 USB driver
+
+P54_PCI - Prism54 PCI support
+
+P54_SPI - Prism54 SPI (stlc45xx) support
+
+P54_USB - Prism54 USB support
+
+QTNFMAC_PCIE - Quantenna QSR1000/QSR2000/QSR10g PCIe support
+
+RSI_91X - Redpine Signals Inc 91x WLAN driver support
+
+RSI_SDIO - Redpine Signals SDIO bus support
+
+RSI_USB - Redpine Signals USB bus support
+
+RT2X00_LIB_FIRMWARE - Ralink driver firmware support
+
+RT61PCI - Ralink rt2501/rt61 (PCI/PCMCIA) support
+
+RT73USB - Ralink rt2501/rt73 (USB) support
+
+RT2800PCI - Ralink rt2800 (PCI/PCMCIA) support
+
+RT2800USB - Ralink rt2800 (USB) support
+
+RTL8XXXU - RTL8723AU/RTL8188[CR]U/RTL819[12]CU (mac80211) support
+
+RTLWIFI - Realtek Wireless Network Adapters
+
+RTL8188EE - Realtek RTL8188EE Wireless Network Adapter
+
+R8188EU - Realtek RTL8188EU Wireless LAN NIC driver
+
+RTL8192CE - Realtek RTL8192CE/RTL8188CE Wireless Network Adapter
+
+RTL8192CU - Realtek RTL8192CU/RTL8188CU USB Wireless Network Adapter
+
+RTL8192DE - Realtek RTL8192DE/RTL8188DE PCIe Wireless Network Adapter
+
+RTL8192SE - Realtek RTL8192SE/RTL8191SE PCIe Wireless Network Adapter
+
+RTL8192E - RealTek RTL8192E Wireless LAN NIC driver
+
+RTL8192EE - RealTek RTL8192EE Wireless Network Adapter
+
+RTL8192U - RealTek RTL8192U Wireless LAN NIC driver
+
+R8712U - RealTek RTL8712U (RTL8192SU) Wireless LAN NIC driver
+
+RTL8723AE - Realtek RTL8723AE PCIe Wireless Network Adapter
+
+RTL8723BE - Realtek RTL8723BE PCIe Wireless Network Adapter
+
+RTL8723BS - Realtek RTL8723BS SDIO Wireless LAN NIC driver
+
+RTL8821AE - Realtek RTL8821AE/RTL8812AE Wireless LAN NIC driver
+
+RTW88 - Realtek 802.11ac wireless chips support
+
+RTW88_8821C - Realtek 8821CE PCI wireless network adapter
+
+RTW88_8822BE - Realtek 8822BE PCI wireless network adapter
+
+RTW88_8822CE - Realtek 8822CE PCI wireless network adaptar
+
+RTW88_8723DE - Realtek 8723DE PCI wireless network adaptar
+
+VT6656 - VIA Technologies VT6656 support
+
+WL1251 - TI wl1251 support
+
+WL12XX - TI wl12xx support
+
+WL18XX - TI wl18xx support
+
+WLCORE - TI wlcore support
+
+WLCORE_SDIO - TI wlcore SDIO support
+
+WLCORE_SPI - TI wlcore SPI support
+
+USB_ZD1201 - USB ZD1201 based Wireless device support
+
+WCN36XX - Qualcomm Atheros WCN3660/3680 support
+
+WFX - Silicon Labs wireless chips WF200 and further
+
+WILC1000 - WILC1000 support (WiFi only)
+
+ZD1211RW - ZyDAS ZD1211/ZD1211B USB-wireless support
+
+IEEE802154_ADF7242 - ADF7242 transceiver driver
+
+BT_ATH3K - Atheros firmware download driver
+
+BT_BCM - Broadcom protocol support
+
+BT_HCIBCM203X - HCI BCM203x USB driver
+
+BT_HCIUART_AG6XX - Intel AG6XX protocol support
+
+BT_HCIUART_LL - HCILL protocol support
+
+BT_HCIUART_MRVL - Marvell protocol support
+
+BT_HCIUART_NOKIA - UART Nokia H4+ protocol support
+
+BT_HCIBFUSB - HCI BlueFRITZ! USB driver
+
+BT_HCIBT3C - HCI BT3C (PC Card) driver
+
+BT_HCIBTUSB - HCI USB driver
+
+BT_INTEL - Bluetooth support for Intel devices
+
+BT_HCIUART_INTEL - Intel protocol support
+
+BT_MRVL_SDIO - Marvell BT-over-SDIO driver
+
+BT_MTKSDIO - MediaTek HCI SDIO driver
+
+BT_MTKUART - MediaTek HCI UART driver
+
+BT_QCA - Bluetooh support for Qualcomm/Atheros devices
+
+BT_RTL - Bluetooth support for Realtek devices
+
+TI_ST - Texas Instruments shared transport line discipline
+
+INFINIBAND_HFI1 - Intel OPA Gen1 support
+
+INFINIBAND_QIB - QLogic PCIe HCA support
+
+CAN_SOFTING - Softing Gmbh CAN generic support
+
+CAN_SOFTING_CS - Softing Gmbh CAN pcmcia cards
+
+NET_DSA_LANTIQ_GSWIP - Lantiq / Intel GSWIP
+
+MICROSEMI_PHY - Microsemi PHYs
+
+MISDN_SPEEDFAX - Support for Sedlbauer Speedfax+
+
+SERIAL_ICOM - IBM Multiport Serial Adapter
+
+SERIAL_QE - Freescale QUICC Engine serial port support
+
+SERIAL_RP2 - Comtrol RocketPort EXPRESS/INFINITY support
+
+LEDS_LP55XX_COMMON - Common Driver for TI/National LP5521 and LP5523/55231
+
+LEDS_LP5521 - LED Support for N.S. LP5521 LED driver chip
+
+LEDS_LP5523 - LED Support for TI/National LP5523/55231 LED driver chip
+
+MOUSE_CYAPA - Cypress APA I2C Trackpad support
+
+MOUSE_ELAN_I2C - ELAN I2C Touchpad support
+
+TOUCHSCREEN_CHIPONE_ICN8505 - chipone icn8505 touchscreen controller
+
+TOUCHSCREEN_ELAN - Elan eKTH I2C touchscreen
+
+TOUCHSCREEN_ATMEL_MXT - Atmel mXT I2C Touchscreen
+
+TOUCHSCREEN_GOODIX - Goodix I2C touchscreen
+
+TOUCHSCREEN_HIDEEP - HiDeep Touch IC
+
+TOUCHSCREEN_IQS5XX - Azoteq IQS550/572/525 trackpad/touchscreen controller
+
+TOUCHSCREEN_MELFAS_MIP4 - MELFAS MIP4 Touchscreen
+
+TOUCHSCREEN_RM_TS - Raydium I2C Touchscreen
+
+TOUCHSCREEN_ROHM_BU21023 - ROHM BU21023/24 Dual touch support resistive touchscreens
+
+TOUCHSCREEN_SILEAD - Silead I2C touchscreen
+
+TOUCHSCREEN_DMI - DMI based touchscreen configuration info
+
+TOUCHSCREEN_WDT87XX_I2C - Weida HiTech I2C touchscreen
+
+INPUT_IMS_PCU - IMS Passenger Control Unit driver
+
+INTEL_ISH_FIRMWARE_DOWNLOADER - Host Firmware Load feature for Intel ISH
+
+COMEDI - Data acquisition support (comedi)
+
+COMEDI_DAQBOARD2000 - IOtech DAQboard/2000 support
+
+COMEDI_JR3_PCI - JR3/PCI force sensor board support
+
+COMEDI_ME_DAQ - Meilhaus ME-2000i, ME-2600i, ME-3000vm1 support
+
+COMEDI_ME4000 - Meilhaus ME-4000 support
+
+COMEDI_NI_PCIDIO - NI PCI-DIO32HS, PCI-6533, PCI-6534 support
+
+IIO_SSP_SENSORHUB - Samsung Sensorhub driver
+
+MMC_VUB300 - VUB300 USB to SDIO/SD/MMC Host Controller support
+
+SCSI_QLOGICPTI - PTI Qlogic, ISP Driver
+
+SCSI_ADVANSYS - AdvanSys SCSI
+
+SCSI_QLOGIC_1280 - Qlogic QLA 1240/1x80/1x160 SCSI
+
+SCSI_AIC94XX - Adaptec AIC94xx SAS/SATA support
+
+SCSI_BFA_FC - Brocade BFA Fibre Channel Support
+
+SCSI_CHELSIO_FCOE - Chelsio Communications FCoE support
+
+SCSI_EFCT - Emulex Fibre Channel Target
+
+SCSI_LPFC - Emulex LightPulse Fibre Channel Support
+
+SCSI_QLA_FC - QLogic QLA2XXX Fibre Channel Support
+
+SCSI_WD719x - Western Digital WD7193/7197/7296 support
+
+USB_CXACRU - Conexant AccessRunner USB support
+
+USB_SPEEDTOUCH - Speedtouch USB support
+
+USB_UEAGLEATM - ADI 930 and eagle USB DSL modem
+
+USB_XHCI_PCI_RENESAS - Support for additional Renesas xHCI controller with firwmare
+
+USB_XHCI_PCI - because of USB_XHCI_PCI_RENESAS
+
+USB_XHCI_RCAR - xHCI support for Renesas R-Car SoCs
+
+USB_XHCI_TEGRA - xHCI support for NVIDIA Tegra SoCs
+
+USB_EMI26 - EMI 2|6 USB Audio interface
+
+USB_EMI62 - EMI 6|2m USB Audio interface
+
+USB_EZUSB_FX2 - Functions for loading firmware on EZUSB chips
+
+USB_ISIGHTFW - iSight firmware loading support
+
+USB_STORAGE_ENE_UB6250 - USB ENE card reader support
+
+USB_SERIAL_KEYSPAN - USB Keyspan USA-xxx Serial Driver
+
+USB_SERIAL_EDGEPORT - USB Inside Out Edgeport Serial Driver
+
+USB_SERIAL_EDGEPORT_TI - USB Inside Out Edgeport Serial Driver (TI devices)
+
+USB_SERIAL_MXUPORT - USB Moxa UPORT Serial Driver
+
+USB_SERIAL_TI - USB TI 3410/5052 Serial Driver
+
+USB_SERIAL_WHITEHEAT - USB ConnectTech WhiteHEAT Serial Driver
+
+UCSI_CCG - UCSI Interface Driver for Cypress CCGx
+
+BCM_VK - Support for Broadcom VK Accelerators
+
+GEHC_ACHC - GEHC ACHC support
+
+HABANA_AI - HabanaAI accelerators (habanalabs)
+
+LATTICE_ECP3_CONFIG - Lattice ECP3 FPGA bitstrap configuration via SPI
+
+REMOTEPROC - Support for Remote Processor subsystem
+
+KEYSTONE_REMOTEPROC - Keystone Remoteproc support
+
+MTK_SCP - Mediatek SCP support
+
+WKUP_M3_RPROC - AMx3xx Wakeup M3 remoteproc support
+
+QCOM_Q6V5_ADSP - Qualcomm Technology Inc ADSP Peripherial Image Loader
+
+QCOM_Q6V5_MSS - Qualcomm Hexagon V5 self-authenticating modem subsystem support
+
+QCOM_Q6V5_PAS - Qualcomm Hexagon V5 Peripherial Authentication Service support
+
+QCOM_Q6V5_WCSS - Qualcomm Hexagon based WCSS Peripheral Image Loader
+
+QCOM_WCNSS_PIL - Qualcomm WCNSS Peripherial Image Loader
+
+QCOM_IPA - Qualcomm IPA support
+
+MFD_IQS62X - Azoteq IQS620A/621/622/624/625 core support
+
+PTP_1588_CLOCK_IDTCM - IDT CLOCKMATRIX as PTP clock
+
+PTP_1588_CLOCK_IDT82P33 - IDT 82P33xxx PTP clock
+
+SND_ASIHPI - AudioScience ASIxxxx
+
+SND_CS46XX - Cirrus Logic (Sound Fusion) CS4280/CS461x/CS462x/CS463x
+
+SND_KORG1212 - Korg 1212 IO
+
+SND_MAESTRO3 - ESS Allegro/Maestro3
+
+SND_YMFPCI - Yamaha YMF724/740/744/754
+
+SND_SB16_CSP - SB16 Advanced Signal Processor
+
+SND_WAVEFRONT - Turtle Beach Maui,Tropez,Tropez+ (Wavefront)
+
+SND_VX_LIB - Digigram VX soundcards
+
+SND_DARLA20 - (Echoaudio) Darla20
+
+SND_DARLA24 - (Echoaudio) Darla24
+
+SND_ECHO3G - (Echoaudio) 3G cards
+
+SND_GINA20 - (Echoaudio) Gina20
+
+SND_GINA24 - (Echoaudio) Gina24
+
+SND_INDIGO - (Echoaudio) Indigo
+
+SND_INDIGODJ - (Echoaudio) Indigo DJ
+
+SND_INDIGODJX - (Echoaudio) Indigo DJx
+
+SND_INDIGOIO - (Echoaudio) Indigo IO
+
+SND_INDIGOIOX - (Echoaudio) Indigo IOx
+
+SND_LAYLA20 - (Echoaudio) Layla20
+
+SND_LAYLA24 - (Echoaudio) Layla24
+
+SND_MIA - (Echoaudio) Mia
+
+SND_MONA - (Echoaudio) Mona
+
+SND_<(Echoaudio)> - (Echoaudio) all of the above
+
+SND_EMU10K1 - Emu10k1 (SB Live!, Audigy, E-mu APS)
+
+SND_MIXART - Digigram miXart
+
+SND_PCXHR - Digigram PCXHR
+
+SND_RIPTIDE - Conexant Riptide
+
+SND_HDA_CODEC_CA0132_DSP - Support new DSP code for CA0132 codec
+
+SND_HDSP - RME Hammerfall DSP Audio
+
+SND_MSND_PINNACLE - Support for Turtle Beach MultiSound Pinnacle
+
+SND_MSND_CLASSIC - Support for Turtle Beach MultiSound Classic, Tahiti, Monterey
+
+SND_SSCAPE - Ensoniq SoundScape driver
+
+SND_SOC_ADAU1701 - ADAU1701 SigmaDSP processor
+
+SND_SOC_ADAU1761 - ADAU1761 SigmaDSP processor
+
+SND_SOC_ADAU1781 - ADAU1781 SigmaDSP processor
+
+SND_SOC_FSL_EASRC - Enhanced Asynchronous Sample Rate Converter (EASRC) module support
+
+SND_SOC_FSL_XCVR - NXP Audio Transceiver (XCVR) module support
+
+SND_SOC_MAX98390 - Maxim Integrated MAX98390 Speaker Amplifier
+
+SND_SOC_RT5677 - RT5677 SoC
+
+SND_SOC_SIGMADSP - SigmaStudio firmware loader
+
+SND_SOC_ACPI_INTEL_MATCH - undocumented
+
+SND_SOC_INTEL_CATPT - undocumented
+
+SND_SOC_INTEL_SKYLAKE - All Skylake/SST Platforms
+
+SND_SST_ATOM_HIFI2_PLATFORM - HiFi2 Platforms
+
+SND_SST_ATOM_HIFI2_PLATFORM_PCI - PCI HiFi2 (Merrifield) Platforms
+
+SND_SOC_RT5514 - undocumented
+
+SND_SOC_WM0010 - WM0010 DSP driver
+
+SND_SOC_WM2000 - WM2000 ALSA Soc Audio codecs
+
+SND_SOC_WM8994 - WM8994 ALSA Soc Audio codecs
+
+SND_SOC_WM_ADSP - Wolfson ADSP support
+
+SND_SOC_ZL38060 - Microsemi ZL38060 Connected Home Audio Processor
+
+SND_SOC_SH4_SIU - ALSA SoC driver for Renesas SH7343, SH7722 SIU peripheral
+
+SND_USB_6FIRE - TerraTec DMX 6Fire USB
+
+ZIIRAVE_WATCHDOG - Zodiac RAVE Watchdog Timer
+
+FSI_MASTER_AST_CF - FSI master based on Aspeed ColdFire coprocessor
+
+I2C_SLAVE_EEPROM - I2C eeprom slave driver
+
+MHI_BUS - Modem Host Interface (MHI) bus
+
+MHI_BUS_PCI_GENERIC - MHI PCI controller driver
+
+GREYBUS_FIRMWARE - Greybus Firmware Download Class driver
+
+GREYBUS_BOOTROM - Greybus Bootrom Class driver
+
+ARCH_QCOM - Qualcomm Support
+
+QCOM_MDT_LOADER - Qualcomm Peripheral Image Loader
+
+QCOM_WCNSS_CTRL - Qualcomm WCNSS control driver
+
+KEYSTONE_NAVIGATOR_QMSS - Keystone Queue Manager Sub System
+
+BRCMSTB_DPFE - Broadcom STM DPFE driver
+
+ARCH_MEDIATEK - MediaTek SoC Support
+
+Documentation - non-Free firmware scripts and documentation
